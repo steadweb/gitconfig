@@ -1,0 +1,32 @@
+[user]
+  name = Luke Steadman
+  email = luke@steadweb.co.uk
+
+[core]
+	autocrlf = input
+	editor = vim
+
+[color]
+	status = auto
+	diff = auto
+	interactive = auto
+	branch = auto
+
+[fetch]
+	prune = true
+
+[alias]
+	st = status
+	lg = log --graph --decorate --branches --oneline --remotes --tags --all --color
+	ci = commit
+	co = checkout
+	cdiff = diff --cached
+	subup = submodule update --init --recursive
+	ff = merge --ff-only
+	show-all-the-things = manifest
+	yoink = cherry-pick
+	unstage = reset HEAD
+	authors = !git log --format='%aN' | sort | uniq -c | sort -nr
+	committers = !git log --format='%cN' | sort | uniq -c | sort -nr
+	whatis = rev-list --max-count 1
+	rebase = rebase -p
