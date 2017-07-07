@@ -1,6 +1,6 @@
 [user]
-  name = Luke Steadman
-  email = luke@steadweb.co.uk
+  	name = Luke Steadman
+  	email = luke@steadweb.co.uk
 
 [core]
 	autocrlf = input
@@ -23,6 +23,7 @@
 	cdiff = diff --cached
 	subup = submodule update --init --recursive
 	ff = merge --ff-only
+	fff = !git fetch -p && git ff && :
 	show-all-the-things = manifest
 	yoink = cherry-pick
 	unstage = reset HEAD
